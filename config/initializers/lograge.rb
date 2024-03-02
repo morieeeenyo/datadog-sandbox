@@ -11,6 +11,17 @@ Rails.application.configure do
       payload[:exception] = payload[:exception]
       payload[:exception_backtrace] = payload[:exception_object].backtrace[0..6]
     end
-    payload
+
+    {
+        method: payload[:method],
+        path: payload[:path],
+        controller: payload[:controller],
+        action: payload[:action],
+        status: payload[:status],
+        duration: payload[:duration],
+        params: payload[:params],
+        exception: payload[:exception],
+        exception_backtrace: payload[:exception_backtrace],
+    }
   }
 end
