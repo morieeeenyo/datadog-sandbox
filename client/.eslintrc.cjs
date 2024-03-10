@@ -6,7 +6,7 @@ module.exports = {
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:react/recommended", // 追加
-    "plugin:react/jsx-runtime",  // 追加
+    "plugin:react/jsx-runtime", // 追加
     "plugin:react-hooks/recommended",
     "plugin:vitest/recommended", // 追加
     "prettier", // 追加
@@ -15,7 +15,7 @@ module.exports = {
   parser: "@typescript-eslint/parser",
   plugins: [
     "react-refresh",
-    "import" // 追加
+    "import", // 追加
   ],
   settings: {
     react: { version: "detect" }, // 追加
