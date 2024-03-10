@@ -1,0 +1,6 @@
+query fetchTweets {
+ tweets {
+  id
+  content
+ }
+}
