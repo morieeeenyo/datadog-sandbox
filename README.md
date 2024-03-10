@@ -1,24 +1,30 @@
-# README
+# Datadog Sandbox
+Datadogをガシガシ触っていくためのアプリ
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# 環境構築
+## 動作環境
+- Ruby 3.2.X
+- rails 7.1.X
 
-Things you may want to cover:
+## Setup
+事前にruby, mysql, nodeの設定が完了していることが前提です
+リポジトリのクローン後以下の手順に従ってください
 
-* Ruby version
+### 1.パッケージのインストール
+```
+bundle
+yarn
+```
 
-* System dependencies
+### 2.DBの作成
+```
+bundle exec rails db:create db:migrate
+```
 
-* Configuration
+### 3.Datadogアカウントの作成とDatadog Agentのセットアップ
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 各種お役立ちコマンド
+schema grapqlのdump
+```
+rake graphql:schema:dump
+```
