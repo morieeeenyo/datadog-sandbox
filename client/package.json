@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "fix": "run-s fix:*",
     "fix:prettier": "prettier . --write",
-    "fix:eslint": "eslint . --ext .ts,.tsx --fix"
+    "fix:eslint": "eslint . --ext .ts,.tsx --fix",
+    "codegen": "graphql-codegen --config codegen.ts"
   },
   "dependencies": {
     "@apollo/client": "^3.9.6",
@@ -20,6 +21,8 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@graphql-codegen/cli": "5.0.2",
+    "@parcel/watcher": "^2.4.1",
     "@types/react": "^18.2.56",
     "@types/react-dom": "^18.2.19",
     "@typescript-eslint/eslint-plugin": "^7.0.2",
@@ -33,7 +36,8 @@
     "eslint-plugin-react-refresh": "^0.4.5",
     "eslint-plugin-vitest": "^0.3.24",
     "prettier": "^3.2.5",
-    "typescript": "^5.2.2",
-    "vite": "^5.1.4"
+    "typescript": "^5.4.2",
+    "vite": "^5.1.4",
+    "@graphql-codegen/client-preset": "4.2.4"
   }
 }
